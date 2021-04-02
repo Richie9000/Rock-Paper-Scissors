@@ -11,3 +11,12 @@ function computerPlay (){
 
 }
 computerPlay()
+
+function playRound (computerPlay, playerSelection){
+
+    if (computerPlay == "rock" && playerSelection == "paper"){
+        return "You Win! Paper beats Rock"
+    }
+
+}
+playRound(computerPlay, playerSelection)
