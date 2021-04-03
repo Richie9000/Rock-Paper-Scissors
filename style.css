@@ -1,5 +1,5 @@
 body {
-  background-color: #242f40;
+  background-image: url(../img/dark_wall.png);
   color: #e5e5e5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -39,10 +39,10 @@ img {
 
 /* Buttons */
 .button {
-  background-color: #363636;
+  background-color: #363636; 
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-  color: #e5e5e5;
+  color: #e5e5e5;  
   font-size: 1.2em;
   padding: 7px;
   text-align: center;
@@ -52,57 +52,56 @@ img {
   border: 1px solid #ffb900;
   cursor: pointer;
   -webkit-box-shadow: 0px 1px 5px 0px #ffb900;
-  box-shadow: 0px 1px 5px 0px #ffb900;
+          box-shadow: 0px 1px 5px 0px #ffb900;
 }
 
 .userClick {
   border: 1px solid #ffb900;
   -webkit-box-shadow: 0px 1px 5px 0px #ffb900;
-  box-shadow: 0px 1px 5px 0px #ffb900;
+          box-shadow: 0px 1px 5px 0px #ffb900;
   -webkit-transition: all 2s ease;
   -o-transition: all 2s ease;
   transition: all 2s ease;
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.u-buttons,
-.c-buttons {
+.user-buttons, .computer-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.u-buttons > * {
+.user-buttons > * {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 20%;
-  flex: 0 1 20%;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
-.c-buttons > * {
+.computer-buttons > * {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 20%;
-  flex: 0 1 20%;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
-.b h3:last-child {
+.button h3:last-child {
   padding-top: 5px;
 }
 
 .computerPick {
   border: 1px solid #ffb900;
   -webkit-box-shadow: 0px 1px 5px 0px #ffb900;
-  box-shadow: 0px 1px 5px 0px #ffb900;
+          box-shadow: 0px 1px 5px 0px #ffb900;
   -webkit-transition: all 2s ease;
   -o-transition: all 2s ease;
   transition: all 2s ease;
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .refresh {
@@ -113,55 +112,52 @@ img {
 }
 
 /* 2 Player Areas not including R-P-S buttons */
-.p-container {
+.player-container {
   min-width: 250px;
 }
 
-.p-label {
+.player-label {
   margin-bottom: 5px;
   margin-top: 15px;
 }
 
-.p-type img {
+.player-type img {
   height: 35px;
   margin-top: 5px;
 }
 
-.u-score,
-.c-score {
+.user-score, .computer-score {
   font-size: 2em;
   color: #ffb900;
 }
 
-.u-container,
-.c-container {
+.user-container, .computer-container {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   margin-bottom: 30px;
   padding: 10px 3vw;
 }
 
-.u-container {
+.user-container {
   background-color: #242f40;
 }
 
-.c-container {
+.computer-container {
   background-color: #314158;
 }
 
-.u-profile,
-.c-profile {
+.user-profile, .computer-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 15px;
   padding-bottom: 5px;
 }
 
-.u-icon {
+.user-icon {
   line-height: 42px;
 }
 
@@ -178,44 +174,44 @@ li {
 
 @media only screen and (min-width: 450px) {
   .game-wrapper {
-    margin: 0 auto;
-    max-width: 400px;
+      margin: 0 auto;
+      max-width: 400px;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .game-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    max-width: 850px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      max-width: 850px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   }
 
   .game-wrapper > * {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 45%;
-    flex: 0 1 45%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 45%;
+              flex: 0 1 45%;
   }
-
-  .p-container {
-    margin: 0 15px;
+  
+  .player-container {
+      margin: 0 15px;
   }
 
   .round-result {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 100%;
-    flex: 0 1 100%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
   }
 
   .refresh {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 25%;
-    flex: 0 1 25%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   }
 }
